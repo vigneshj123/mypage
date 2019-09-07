@@ -1,0 +1,133 @@
+<html>
+<head>
+	<title></title>
+		<link rel="stylesheet" type="text/css"href="style.css">
+	
+</head>
+<body>
+
+	<div class="background">
+		<div class="nav">
+		<a class="a active" href="#">HOME</a>
+		<a class="b" href="#">ABOUT ME</a>
+		<a class="c" href="#">ACADEMIC </a>
+		<a class="d" href="#">ACHIEVEMENTS</a>
+		<a class='e'  href="#">SKILLS</a>
+	</div>
+
+<div class="content">
+	<div class="home">
+		<h1>I am Vignesh</h1>
+		<h3>Software Engineer</h3>
+	</div> 
+	<div class="aboutus">
+		<p>mobile:+918428847601<br>
+		   Email :vicky.vigneshj1998@gmail.com
+    		</p>
+		 </div>
+		 <div class="academic">
+     	<p>
+     		<address>
+	 <b><U>DEGREE</U></b> <br>                  
+      Pursuing, (Till 6th sem)<br>
+      K.S.R.College of Engineering ,  <br>              		
+      Cgpa 8.19.<br>
+      B.Tech  Information Technology,		<br>	
+      Tiruchengode.<br>
+      <b><U>HSC</U></b> <br>   
+      Graduated,<br>
+      April 2016<br>
+      John Britto Hr Sec School,<br>                           
+      Marks 71%<br>	 
+      State Board,<br>
+      Denkanikottai.<br>
+      <b><U>SSLC</U></b>  <br>     
+      John Britto Hr Sec School,<br>                           
+      Graduated,<br> 
+      April 2014<br>
+      State Board,<br>
+      Denkanikottai.<br>
+      Marks 86%<br>
+      </address>
+		 	</p>
+</div>
+<div class="acheivements">
+	<p>
+	Achieved an Eminent <b>World Record</b> Under the Theme <b>WORLD’S BIGGEST INTERNATIONAL HANDS-ON GAMING AND SECURITY WORKSHOP</b>   at    
+C ABDUL HAKEEM COLLEGE OF ENGINEERING AND TECHNOLOGY.
+	</p>
+</div>
+<div class="skills">
+	<ul>
+		<li>
+			Object Oriented Programming
+		</li>
+		<li>
+			Database Management System
+		</li>
+		<li>
+			Webpage Developing
+		</li>
+	</ul>
+</div>
+		 </div>
+		 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		 <script type="text/javascript">
+		 	$(document).ready(function(){
+		 		$('a').click(function(){
+		 			//alert("i am click");
+		 			var selected = $(this);
+		 			$('a').removeClass('active');
+		 			$(selected).addClass('active');
+		 		});
+		 		var $a = $('.a'),
+		 		$b = $('.b'),
+		 		$c = $('.c'),
+		 		$d = $('.d'),
+		 		$e = $('.e'),
+		 		$home = $('.home'),
+		 		$aboutus = $('.aboutus');
+		 		$academic = $('.academic');
+		 		$acheivements = $('.acheivements');
+		 		$skills = $('.skills');
+		 		$a.click(function(){
+		 			$home.fadeIn();
+		 			$aboutus.fadeOut();
+		 			$academic.fadeOut();
+		 			$acheivements.fadeOut();
+		 			$skills.fadeOut();
+		 		});
+		 		$b.click(function(){
+		 			$home.fadeOut();
+		 			$aboutus.fadeIn();
+		 		    $academic.fadeOut();
+		 		    $acheivements.fadeOut();
+		 		    $skills.fadeOut();
+		 		});
+		 		$c.click(function(){
+		 			$academic.fadeIn();
+		 			$aboutus.fadeOut();
+		 			$home.fadeOut();
+		 			$acheivements.fadeOut();
+		 			$skills.fadeOut();
+		 		});	
+		 		$d.click(function(){
+		 			$acheivements.fadeIn();
+		 			$aboutus.fadeOut();
+		 			$home.fadeOut();
+		 			$academic.fadeOut();
+		 			$skills.fadeOut();
+		 	});
+		 		$e.click(function(){
+		 			$skills.fadeIn();
+		 			$aboutus.fadeOut();
+		 			$home.fadeOut();
+		 			$academic.fadeOut();
+		 			$acheivements.fadeOut();
+		 		});	
+
+		 		});
+		 </script> 
+
+</body>
+</html>
